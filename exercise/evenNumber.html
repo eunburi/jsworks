@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5강 실습_짝수</title>
+</head>
+<body>
+    <script>
+        /*내가한거
+     let number = evenNumber(2);
+    
+    
+     for(var i = 0; i <number.length; i=i+2){
+         number[i] = i=i+2 ;
+     }
+
+     for (var i = 0; i < number.length; i++){
+       console.log(number[i]);
+     }
+    */
+    
+    let arrNum = new Array(5);
+    //저장
+
+    /*
+     arrNum[0] = 2;
+     arrNum[2] = 4;
+     arrNum[4] = 6;
+    
+    */
+
+    for(var i=0; i<arrNum.length; i++){
+        arrNum[i] = (i+1) * 2;
+
+    }
+    console.log(arrNum);
+
+    //조회1(출력) - 배열 의 크기
+    for(var i=0; i<arrNum.length; i++)
+    document.write(arrnum[i] + " ");
+    document.write("<br>")
+    
+    </script>
+
+
+
+
+</body>
+</html>

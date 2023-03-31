@@ -1,10 +1,10 @@
 // 입장객 수에 따른 좌석의 줄(행)수 계산
-        let customer = prompt("입장객은 몇명인가요?");  // 입장객 수
-        let colNum = prompt("한 줄에 몇명씩 앉나요?" ) // 열의수
+        let customer = parseInt(prompt("입장객은 몇명인가요?"));  // 입장객 수
+        let colNum = parseInt((prompt("한 줄에 몇명씩 앉나요?" ))) // 열의수
         let rowNum; //행(줄)의 수
 
         //나머지 있는지 없는지 처리
-        if(customer == null || colNum == null){
+        if(customer == null || colNum == null || isNaN(customer) || isNaN(colNum)){
             document.write("<p>입력이 취소되었습니다.</p>");
 
         }
