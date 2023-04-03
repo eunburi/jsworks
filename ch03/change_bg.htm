@@ -12,7 +12,7 @@
     <div class="menu">
         <ul>
             <li>
-                <a href="#" onclick="changeBg('green')">Green</a>
+                <a href="#" onclick="changeBg('Green')">Green</a>
             </li>
             <li>
                 <a href="#" onclick="changeBg('black')">Black</a>
@@ -26,8 +26,12 @@
     <div class="box" id="rect">  </div>
 
     <script>
+        //매개변수 - 파라미터
+        //function함수이름(변수){}
         function changeBg(color){
             let rect = document.getElementById("rect");
+            //객체.속성.속성(. 연산자)
+            //객체.함수
             rect.style.backgroundColor = color;
 
         }
