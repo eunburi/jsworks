@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lotto 복권 추첨</title>
+</head>
+<body>
+    <section>
+        <h1>로또 추첨 번호</h1>
+    </section>
+        
+    <script>
+        let name = ["짱구,철수,유리,훈이,맹구"];
+        let people = new Array(2);
+
+        document.write("<p>이름 : ");
+
+
+        //랜덤번호 추천
+        for(let i = 0; i < people.length; i++){
+            let num = Math.floor(Math.random() * name.length);//랜덤번호
+            people[i] = num;
+            console.log(people);
+        
+
+        //중복제거
+        for(let j = 0; j < i; j++){
+            if(people[j] == people[i]){
+                console.log("중복번호 : " + people[i])
+                i--; //중복된 인덱스 삭제함
+            }
+        }}
+
+        //출력
+        for(let i = 0; i<people.length; i++){
+            if(i == people.length-1){
+                document.write(name[people[i]]) + "";
+            }
+            else{
+                document.write(people[i] + ", ");
+            }
+    
+        }
+        document.write("</p>")
+    </script>
+</body>
+</html>
